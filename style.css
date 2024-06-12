@@ -1,0 +1,55 @@
+/* Basic reset and container styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, rgb(15, 3, 23), rgb(63, 24, 97));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+}
+
+.counter-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.counter-container i {
+    color: #fff;
+}
+
+.counter {
+    font-size: 2em;
+    margin: 10px 0;
+}
+
+.counter-container span {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+/* Extra small screens */
+@media (max-width: 480px) {
+    .counter-container {
+        padding: 10px;
+    }
+
+    .counter {
+        font-size: 1.5em;
+    }
+
+    .counter-container span {
+        font-size: 1em;
+    }
+}
